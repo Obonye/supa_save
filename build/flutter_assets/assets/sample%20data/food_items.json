@@ -1,0 +1,95 @@
+{
+    "food": [
+        {
+            "id": "1",
+            "itemName": "Raspberry Cake",
+            "foodPictureUrl": "assets/cake.jpg",
+            "price": "25.95",
+            "quantity":"5",
+            "classification":"Meal",
+            "location":"Spar RiverWalk",
+            "collectionTime":"15:00-17:45",
+            "collectionDay":"Today"
+        },
+        {
+            "id": "2",
+            "itemName": "Bananas",
+            "foodPictureUrl": "assets/food_banana.jpg",
+            "price": "1.50",
+            "quantity":"5",
+            "classification":"Groceries",
+            "location":"PnP",
+            "collectionTime":"11:00-14:00",
+            "collectionDay":"Tommorow"
+        },
+        {
+            "id": "3",
+            "itemName": "Brussel Sprouts",
+            "foodPictureUrl": "assets/food_brussels_sprouts.jpg",
+            "price": "10.95",
+            "quantity":"3",
+            "classification":"Groceries",
+            "location":"Woolworths",
+            "collectionTime":"14:00-15:30",
+            "collectionDay":"Tuesday"
+        },
+        {
+            "id": "4",
+            "itemName": "Burger",
+            "foodPictureUrl": "assets/food_burger.jpg",
+            "price": "60.95",
+            "quantity":"1",
+            "classification":"Meal",
+            "location":"Kreo Cafe",
+            "collectionTime":"10:00-11:45",
+            "collectionDay":"Tommorow"
+        },
+        {
+            "id": "5",
+            "itemName": "Curry",
+            "foodPictureUrl": "assets/food_curry.jpg",
+            "price": "35.95",
+            "quantity":"1",
+            "classification":"Meal",
+            "location":"Chutney",
+            "collectionTime":"15:00-17:45",
+            "collectionDay":"Today"
+        },
+        {
+            "id": "6",
+            "itemName": "Eggs",
+            "foodPictureUrl": "assets/food_dozen_eggs.jpg",
+            "price": "80.95",
+            "quantity":"4",
+            "classification":"Groceries'",
+            "location":"Sefalana",
+            "collectionTime":"15:00-17:45",
+            "collectionDay":"Thursday"
+        },
+        {
+            "id": "7",
+            "itemName": "Flour",
+            "foodPictureUrl": "assets/food_flour.jpg",
+            "price": "95.95",
+            "quantity":"8",
+            "classification":"Groceries",
+            "location":"Choppies",
+            "collectionTime":"12:00-14:45",
+            "collectionDay":"Today"
+            
+        },
+        {
+            "id": "8",
+            "itemName": "Fried Rice",
+            "foodPictureUrl": "assets/food_friedrice.jpg",
+            "price": "40.00",
+            "quantity":"3",
+            "classification":"Meal",
+            "location":"Thai Pan",
+            "collectionTime":"19:00-21:45",
+            "collectionDay":"Today"
+            
+        }
+     
+    ]
+}

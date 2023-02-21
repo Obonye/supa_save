@@ -1,0 +1,85 @@
+{
+  "vendors": [
+    {
+      "id": "1",
+      "Name": "KFC",
+      "category": "restuarant",
+      "location": "43.8050354",
+      "logo": "assets/kfc_logo.jpg",
+      "hero":"assets/kfc_hero.jpg"
+    },
+    {
+      "id": "2",
+      "Name": "Woolworths",
+      "category": "supermarket",
+      "location": "-6.1644997",
+      "logo": "assets/woolworths_logo.jpg",
+      "hero":"assets/woolworths_hero.jpg"
+    },
+    {
+      "id": "3",
+      "Name": "Burger King",
+      "category": "restuarant",
+      "location": "108.731128",
+      "logo": "assets/burgerking_logo.jpg",
+      "hero":"assets/burgerking_hero.jpg"
+
+    },
+    {
+      "id": "4",
+      "Name": "PnP",
+      "category": "supermarket",
+      "location": "25.0673009",
+      "logo": "assets/picknpay_logo.png",
+      "hero":"assets/PnP_hero.jpg"
+    },
+    {
+      "id": "5",
+      "Name": "Starbucks",
+      "category": "restuarant",
+      "location": "88.8982666",
+      "logo": "assets/starbucks_logo.jpg",
+      "hero":"assets/starbucks_hero.jpg"
+    },
+    {
+      "id": "6",
+      "Name": "Checkers",
+      "category": "supermarket",
+      "location": "121.0504535",
+      "logo": "assets/checkers_logo.png",
+      "hero":"assets/checkers_hero.jpg"
+    },
+    {
+      "id": "7",
+      "Name": "Mcdonalds",
+      "category": "restuarant",
+      "location": "5.0953327",
+      "logo": "assets/mcdonalds_logo.jpg",
+      "hero":"assets/mcdonalds_hero.jpg"
+    },
+    {
+      "id": "8",
+      "Name": "Choppies",
+      "category": "supermarket",
+      "location": "-8.4396618",
+      "logo": "assets/food_spaghetti.jpg",
+      "hero":"assets/cooking1.jpg"
+    },
+    {
+      "id": "9",
+      "Name": "Primi",
+      "category": "restuarant",
+      "location": "106.105204",
+      "logo": "assets/food_curry.jpg",
+      "hero":"assets/primi_hero.jpg"
+    },
+    {
+      "id": "10",
+      "Name": "Saverite",
+      "category": "supermarket",
+      "location": "104.64117",
+      "logo": "assets/food_burger.jpg",
+      "hero":"assets/cooking1.jpg"
+    }
+  ]
+}

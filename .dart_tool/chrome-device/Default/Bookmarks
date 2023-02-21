@@ -1,0 +1,109 @@
+{
+   "checksum": "5491e495d336b34491562f854b72d8cd",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13320018896101668",
+            "date_last_used": "0",
+            "guid": "54c8940e-da30-4c88-aff7-d56fa573a94b",
+            "id": "6",
+            "name": "Amazon.co.uk – Online Shopping",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://js.redirect.hp.com/jumpstation?bd=amazon&c=*&locale=en_uk&pf=*&s=*&tp=edge"
+         }, {
+            "date_added": "13320018896100857",
+            "date_last_used": "0",
+            "guid": "bc84ee90-4059-48c4-a375-17345136b9d2",
+            "id": "5",
+            "name": "LastPass password manager",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://js.redirect.hp.com/jumpstation?bd=lastpass&c=*&locale=*&pf=*&s=*&tp=edge"
+         }, {
+            "date_added": "13244295471647711",
+            "date_last_used": "0",
+            "guid": "a415be74-f266-4e97-836c-7959efb198ec",
+            "id": "7",
+            "name": "Amazon.co.uk – Online Shopping",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "http://www.amazon.co.uk/gp/bit/amazonbookmark.html?tag=hp2-brobookmark-uk-21&partner=HP"
+         }, {
+            "date_added": "13244295471647711",
+            "date_last_used": "0",
+            "guid": "9c37a8b2-5728-4f16-9ebf-e0ff41c9438c",
+            "id": "8",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "import_fre",
+            "type": "url",
+            "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=7684&destination=booking&refclickid=webslice1819"
+         } ],
+         "date_added": "13320018895831189",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favourites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13244295471647711",
+               "date_last_used": "0",
+               "guid": "a83b129f-5958-4a05-944b-d7442c046a1b",
+               "id": "10",
+               "name": "Amazon.co.uk – Online Shopping",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.amazon.co.uk/gp/bit/amazonbookmark.html?tag=hp2-brobookmark-uk-21&partner=HP"
+            }, {
+               "date_added": "13244295471647711",
+               "date_last_used": "0",
+               "guid": "f1fc87bd-eeef-4a40-adf7-8ffca2addea0",
+               "id": "11",
+               "name": "Booking.com",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=7684&destination=booking&refclickid=iefav1819"
+            } ],
+            "date_added": "13320018898765669",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "c2b06085-7ac8-4c36-ac63-11deb96a3689",
+            "id": "9",
+            "name": "HP",
+            "source": "import_fre",
+            "type": "folder"
+         } ],
+         "date_added": "13320018895831199",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favourites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13320018895831201",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favourites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
