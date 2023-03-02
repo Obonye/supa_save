@@ -1,4 +1,6 @@
-class FoodItem {
+import 'package:flutter/material.dart';
+
+class FoodItem extends ChangeNotifier {
   String id;
   String itemName;
   String price;
@@ -39,5 +41,12 @@ class FoodItem {
   }
   double priceMultiplier(int counter,FoodItem food){
     return double.parse(food.price)*counter;
+  }
+  double totalPrice(List<FoodItem> foods){
+    double total=0;
+    for(int i=0; i<foods.length;i++){
+      total+=double.parse(foods[i].price);
+    }
+    return total;
   }
 }

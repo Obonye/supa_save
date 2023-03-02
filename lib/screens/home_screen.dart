@@ -8,6 +8,7 @@ import 'package:super_save/models/food_item_model.dart';
 import 'package:super_save/theme/custom_theme.dart';
 
 import '../models/explore_data.dart';
+import 'map_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -39,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Icon(
                           Icons.location_on,
-                          color: Colors.black,
+                          color: Color(0xFFFF5722),
                         ),
                         Text(
                           'Gaborone,Botswana',
@@ -48,7 +49,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                     OutlinedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => MapScreen())));
+                      },
                       child: Text(
                         'Change',
                         style: TextStyle(color: Color(0xFF00C853)),

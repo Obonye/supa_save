@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:super_save/components/food_card.dart';
 import 'package:super_save/components/nav_bar.dart';
 import 'package:super_save/screens/home_screen.dart';
+import 'package:super_save/screens/reservations.dart';
 import 'package:super_save/screens/search_screen.dart';
 import 'package:super_save/screens/vendors_screen.dart';
 
@@ -26,9 +27,7 @@ class _HomeState extends State<Home> {
     Container(
       color: Colors.pink,
     ),
-    Container(
-      color: Colors.purple,
-    )
+    ReservationScreen()
   ];
   void _onItemTapped(int index) {
     setState(() {

@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:super_save/components/like_button.dart';
 import 'components.dart';
 import 'package:super_save/models/models.dart';
 import '../screens/food_detail_screen.dart';
-
+import '../models/cart_model.dart';
 class RecommendedCard extends StatelessWidget {
   final FoodItem food;
   int? id;
@@ -14,7 +15,8 @@ class RecommendedCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return Consumer<CartModel>(builder: ((context, value, child) {
+      return InkWell(
       onTap: () {
         Navigator.of(context).push(
             MaterialPageRoute(builder: ((context) => FoodDetailScreen(food: food,vendor: vendors!,))));
@@ -147,5 +149,6 @@ class RecommendedCard extends StatelessWidget {
         ),
       ),
     );
+    }));
   }
 }

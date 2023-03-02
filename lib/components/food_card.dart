@@ -23,6 +23,7 @@ class FoodCard extends StatelessWidget {
                 ))));
       },
       onLongPress: () {
+        
         showModalBottomSheet(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
@@ -130,7 +131,7 @@ class FoodCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Surprise Bag',
+                      food.itemName,
                       style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,

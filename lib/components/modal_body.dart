@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:super_save/components/quantity_selector.dart';
+import 'package:super_save/models/cart_model.dart';
 import '../models/models.dart';
 import '../theme/custom_theme.dart';
 import 'components.dart';
-import 'no_items_controller.dart';
+import 'reserve_button.dart';
 
-class ModalBody extends StatefulWidget {
+class ModalBody extends StatelessWidget {
   final FoodItem food;
   final VendorData vendor;
 
@@ -15,88 +18,78 @@ class ModalBody extends StatefulWidget {
       required double foodPrice});
 
   @override
-  State<ModalBody> createState() => _ModalBodyState();
-}
-
-class _ModalBodyState extends State<ModalBody> {
-  @override
   Widget build(BuildContext context) {
-    NumberOfItems noOfItems = NumberOfItems();
-
-    return Container(
-        color: Color.fromRGBO(0, 0, 0, 0.86),
-        height: 400,
-        child: Column(
-          children: [
-            Container(
-              constraints: BoxConstraints.expand(
-                height: 90,
-                width: double.infinity,
+    return Consumer<CartModel>(builder: ((context, value, child) {
+      return Container(
+          color: Color.fromRGBO(0, 0, 0, 0.86),
+          height: 400,
+          child: Column(
+            children: [
+              Container(
+                constraints: BoxConstraints.expand(
+                  height: 90,
+                  width: double.infinity,
+                ),
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    image: DecorationImage(
+                        image: AssetImage(vendor.hero), fit: BoxFit.cover)),
               ),
-              decoration: BoxDecoration(
-                  color: Colors.black,
-                  image: DecorationImage(
-                      image: AssetImage(widget.vendor.hero),
-                      fit: BoxFit.cover)),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(widget.vendor.vendorName,
-                          style: const TextStyle(
-                              fontSize: 32,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                      Text(
-                        'P${widget.food.priceMultiplier(noOfItems.getCount(), widget.food)}',
-                        style:
-                            const TextStyle(fontSize: 36, color: Colors.white),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 250,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Text('Description',
-                            style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.normal,
-                                color: Color.fromARGB(215, 187, 185, 185))),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Center(child: NumberOfItems()),
-                        Center(
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            style: ButtonStyle(
-                                backgroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Color(0xFF00C853)),
-                                fixedSize: MaterialStateProperty.all<Size>(
-                                    const Size(300, 40))),
-                            child: Text(
-                              'RESERVE',
-                              style: CustomTheme.lightTextTheme.headline1,
-                            ),
-                          ),
+                      children: [
+                        Text(vendor.vendorName,
+                            style: const TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white)),
+                        Text(
+                          Provider.of<CartModel>(context, listen: false)
+                              .multiplier(food, value.count)
+                              .toStringAsFixed(2),
+                          style: const TextStyle(
+                              fontSize: 36, color: Colors.white),
                         ),
                       ],
                     ),
-                  )
-                ],
-              ),
-            )
-          ],
-        ));
+                    SizedBox(
+                      height: 250,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text('Description',
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.normal,
+                                  color: Color.fromARGB(215, 187, 185, 185))),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Center(
+                              child: QuantitySelector(
+                            food: food,
+                            count: value.count,
+                          )),
+                          Center(
+                            child: ReserveButton(
+                              food: food,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ));
+    }));
   }
 }

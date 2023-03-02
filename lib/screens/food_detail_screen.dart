@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:super_save/components/components.dart';
 import 'package:super_save/theme/custom_theme.dart';
 
+import '../components/reserve_button.dart';
 import '../models/models.dart';
 
 class FoodDetailScreen extends StatelessWidget {
@@ -257,40 +258,18 @@ class FoodDetailScreen extends StatelessWidget {
           ),
         )
       ]),
-      bottomSheet: ReserveButton(),
+      bottomSheet: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ReserveButton(
+            food: food,
+          ),
+        ],
+      ),
 
       //Section showing price,quantity and quality and seller
 
       //Buy now or bid button
-    );
-  }
-}
-
-class ReserveButton extends StatelessWidget {
-  const ReserveButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 75,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(10), topRight: Radius.circular(10))),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('RESERVE', style: CustomTheme.lightTextTheme.headline1),
-            style: ButtonStyle(
-                backgroundColor:
-                    MaterialStateProperty.all<Color>(Color(0xFF00C853)),
-                fixedSize:
-                    MaterialStateProperty.all<Size>(const Size(340, 40))),
-          ),
-        ],
-      ),
     );
   }
 }
